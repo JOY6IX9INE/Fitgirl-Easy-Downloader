@@ -40,12 +40,12 @@ To extract and copy all direct download links, follow these steps:
         .filter(url => url.startsWith('https://fuckingfast.co/'));
 
     if (links.length === 0) {
-        console.log("❌ No matching URLs found.");
+        console.log("❌ No Matching URLs Found");
         return;
     }
 
     console.clear();
-    console.log("🔗 Matching URLs:\n");
+    console.log("🔗 Matching URLs :\n");
     console.log(links.join("\n"));
 
     const textarea = document.createElement('textarea');
@@ -55,9 +55,9 @@ To extract and copy all direct download links, follow these steps:
 
     try {
         document.execCommand('copy');
-        console.log("\n✅ All links copied to clipboard!");
+        console.log("\n✅ All Links Copied To Clipboard!");
     } catch (err) {
-        console.error("❌ Failed to copy:", err);
+        console.error("❌ Failed To Copy :", err);
     }
 
     document.body.removeChild(textarea); 
