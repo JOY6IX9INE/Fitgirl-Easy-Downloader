@@ -22,8 +22,6 @@ Ensure you have the following installed before running the script :
    - Extract and download files to the `downloads` folder.
    - Remove processed links from `input.txt`.
 
-Here’s your improved **"Extra"** section with a copy-friendly code block:  
-
 ## Extra  
 
 To extract and copy all direct download links, follow these steps:  
