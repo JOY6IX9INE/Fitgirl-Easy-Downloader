@@ -31,7 +31,7 @@ To extract and copy all direct download links, follow these steps:
    - **Windows/Linux:** Press `F12` or `Ctrl + Shift + I`, then go to the **Console** tab.  
    - **Mac:** Press `Cmd + Option + I`, then go to the **Console** tab.  
 3. Paste the script below into the console and press **Enter**.  
-4. ✅ All matching links will be displayed and automatically copied to your clipboard!  
+4. All matching links will be displayed and automatically copied to your clipboard!  
 
 ````js
 (() => {
