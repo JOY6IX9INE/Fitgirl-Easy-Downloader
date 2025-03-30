@@ -1,8 +1,5 @@
-# Fucking-Fast-Multi-Downloader
-This Tool Helps To Download Multiple Files Easily From fuckingfast.co
-
-It Can Be Used To Get Multiple Parts Easily For Games In fitgirl-repacks.site
-
+# Fitgirl-Easy-Downloader
+This Tool Helps To Download Multiple Files Easily From fitgirl-repacks.site Through fuckingfast.co
 
 ## Prerequisites
 Ensure you have the following installed before running the script :
@@ -25,10 +22,51 @@ Ensure you have the following installed before running the script :
    - Extract and download files to the `downloads` folder.
    - Remove processed links from `input.txt`.
 
-## Extra
-  - You can use `link_extract.py` to get all the links directly.
-  - Just copy the html block where all the direct links exists.
-  - Then paste the block inside the script in the main function.
+Here’s your improved **"Extra"** section with a copy-friendly code block:  
+
+## Extra  
+
+To extract and copy all download links from a webpage, follow these steps:  
+
+1. Open the webpage where you want to grab the links.  
+2. Open the **browser console**:  
+   - **Windows/Linux:** Press `F12` or `Ctrl + Shift + I`, then go to the **Console** tab.  
+   - **Mac:** Press `Cmd + Option + I`, then go to the **Console** tab.  
+3. Paste the script below into the console and press **Enter**.  
+4. ✅ All matching links will be displayed and automatically copied to your clipboard!  
+
+````js
+(() => {
+    const links = Array.from(document.querySelectorAll('a'))
+        .map(a => a.href)
+        .filter(url => url.startsWith('https://fuckingfast.co/'));
+
+    if (links.length === 0) {
+        console.log("❌ No matching URLs found.");
+        return;
+    }
+
+    console.clear();
+    console.log("🔗 Matching URLs:\n");
+    console.log(links.join("\n"));
+
+    const textarea = document.createElement('textarea');
+    textarea.value = links.join("\n");
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    try {
+        document.execCommand('copy');
+        console.log("\n✅ All links copied to clipboard!");
+    } catch (err) {
+        console.error("❌ Failed to copy:", err);
+    }
+
+    document.body.removeChild(textarea); 
+})();
+````  
+
+🔥 **Done!** Now just paste the links wherever you need them. 🚀  
 
 # Disclaimer
 This tool is created for educational purposes and ethical use only. Any misuse of this tool for malicious purposes is not condoned. The developers of this tool are not responsible for any illegal or unethical activities carried out using this tool.
