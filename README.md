@@ -26,9 +26,9 @@ Here’s your improved **"Extra"** section with a copy-friendly code block:
 
 ## Extra  
 
-To extract and copy all download links from a webpage, follow these steps:  
+To extract and copy all direct download links, follow these steps:  
 
-1. Open the webpage where you want to grab the links.  
+1. Open the page where you want to grab the links.  
 2. Open the **browser console**:  
    - **Windows/Linux:** Press `F12` or `Ctrl + Shift + I`, then go to the **Console** tab.  
    - **Mac:** Press `Cmd + Option + I`, then go to the **Console** tab.  
@@ -65,8 +65,6 @@ To extract and copy all download links from a webpage, follow these steps:
     document.body.removeChild(textarea); 
 })();
 ````  
-
-🔥 **Done!** Now just paste the links wherever you need them. 🚀  
 
 # Disclaimer
 This tool is created for educational purposes and ethical use only. Any misuse of this tool for malicious purposes is not condoned. The developers of this tool are not responsible for any illegal or unethical activities carried out using this tool.
