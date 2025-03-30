@@ -15,7 +15,7 @@ Ensure you have the following installed before running the script :
 1. **Prepare Input Links** : Add your URLs to `input.txt`, one per line.
 2. **Run the Script** :
    ```bash
-   python fuckingfast.py
+   python main.py
    ```
 3. The script will :
    - Process each link in `input.txt`.
